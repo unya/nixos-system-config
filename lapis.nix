@@ -20,5 +20,7 @@
         pkgs.linuxPackages.exfat-nofuse
     ];
 
+    network.hostId = "007f0101"; # Lapis' hostid
+
 }
 
