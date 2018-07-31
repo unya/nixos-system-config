@@ -3,7 +3,7 @@
 {
     nixpkgs.config = {
         allowUnfree = true;
-        allowBroken = true;
+        #allowBroken = true; Might be a bit too bold
     };
     
     environment.systemPackages = with pkgs; [
