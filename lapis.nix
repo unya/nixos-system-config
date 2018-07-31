@@ -11,5 +11,14 @@
     networking.hostname = "lapis";
     
 
+    boot.extraModulePackages = [
+        pkgs.linuxPackages.tp_smapi
+        pkgs.linuxPackages.vhba
+        pkgs.linuxPackages.x86_perf_policy
+        pkgs.linuxPackages.acpi_call
+        pkgs.linuxPackages.cpupower
+        pkgs.linuxPackages.exfat-nofuse
+    ];
+
 }
 
