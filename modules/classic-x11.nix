@@ -4,6 +4,7 @@
     services.xserver = {
         enable = true;
         exportConfiguration = true;
+        useGlamor = true;
         
     };
 
