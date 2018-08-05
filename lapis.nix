@@ -12,9 +12,9 @@
                 ./modules/audio.nix
                 ./modules/nix-server.nix
                 ./modules/virtualisation.nix
-                ./modules/yubikey.nix
                 ./modules/security.nix
-                ./modules/network-common.nix ];
+                ./modules/network-common.nix
+                ./modules/fprintd.nix ];
     networking.hostname = "lapis";
     
 
@@ -34,6 +34,11 @@
         "e1000e"
         "ushbid"
     ];
+
+    services.udev.extraRules = ''
+        ACTION=="add", SUBSYSTEM=="net", ATTR{address}=="00:28:f8:c0:66:c4", NAME="wifi0"
+        ACTION=="add", SUBSYSTEM=="net", ATTR{address}=="54:e1:ad:11:86:05", NAME="wired0"
+    ''
 
 }
 

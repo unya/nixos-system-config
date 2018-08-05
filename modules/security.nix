@@ -1,5 +1,9 @@
 {nix, lib, pkgs, config, ...}:
 {
+    imports = [
+        ./yubikey.nix
+        ./tpm.nix
+    ];
     security.sudo.wheelNeedsPassword = false;
     services.openssh = {
         passwordAuthentication = true;
