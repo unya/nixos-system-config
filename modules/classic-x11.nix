@@ -5,14 +5,14 @@
         enable = true;
         exportConfiguration = true;
         useGlamor = true;
-        
+
     };
 
     environment.systemPackages = with pkgs; [
         xorg.xkill xorg.xev xorg.xdpyinfo xorg.xdm
         xorg.xset xorg.xmodmap glxinfo
         google-chrome pavucontrol mpv youtube-dl
-        wine compton glxinfo xorg.xwd
+        wine compton xorg.xwd
     ];
 
     fonts = {
