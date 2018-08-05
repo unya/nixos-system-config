@@ -27,6 +27,11 @@
         pkgs.linuxPackages.exfat-nofuse
     ];
 
+    boot.kernelParams = [
+        "boot.shell_on_fail"
+    ];
+    systemd.enableEmergencyMode = true;
+
     network.hostId = "007f0101"; # Lapis' hostid
 
     boot.initrd.availableKernelModules = [
