@@ -7,7 +7,14 @@
                 ./modules/hardware-common.nix
                 ./modules/kernel.nix
                 ./modules/users.nix
-                ./modules/desktop.nix ];
+                ./modules/desktop.nix
+                ./modules/bluetooth.nix
+                ./modules/audio.nix
+                ./modules/nix-server.nix
+                ./modules/virtualisation.nix
+                ./modules/yubikey.nix
+                ./modules/security.nix
+                ./modules/network-common.nix ];
     networking.hostname = "lapis";
     
 
@@ -21,6 +28,12 @@
     ];
 
     network.hostId = "007f0101"; # Lapis' hostid
+
+    boot.initrd.availableKernelModules = [
+        "igb"
+        "e1000e"
+        "ushbid"
+    ];
 
 }
 
