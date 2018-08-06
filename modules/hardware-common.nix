@@ -1,7 +1,6 @@
 {config, pkgs, lib, ...}:
 
 {
-    powerManagement.cpuFreqGovernor = mkDefault "ondemand";
     hardware.cpu.intel.updateMicrocode = true;
     hardware.cpu.amd.updateMicrocode = true;
     hardware.enableKSM = true;
