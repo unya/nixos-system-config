@@ -4,7 +4,6 @@
     networking.domain = "ruri-systems.net";
     networking.enableWLAN = true;
     networking.firewall.enable = false;
-    networking.nftables.enable = true;
     networking.search = ["local" "ruri-systems.net"];
     networking.usePredictableInterfaceNames = false;
     networking.wireless.enable = true;
