@@ -38,6 +38,8 @@
 
     hardware.opengl = {
         enable = true;
+	extraPackages = with pkgs; [ vaapiIntel libvdpau-va-gl vaapiVdpau intel-ocl ];
+	extraPackages32 = with pkgs; [ vaapiIntel libvdpau-va-gl vaapiVdpau intel-ocl ];
         driSupport32Bit = true;
         s3tcSupport = true;
     };
