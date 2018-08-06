@@ -11,7 +11,8 @@
     environment.systemPackages = with pkgs; [
         xorg.xkill xorg.xev xorg.xdpyinfo xorg.xdm
         xorg.xset xorg.xmodmap glxinfo
-        google-chrome pavucontrol mpv youtube-dl
+        # google-chrome
+ pavucontrol mpv youtube-dl
         wine compton xorg.xwd xorg.smproxy xorg.twm
         xorg.xbacklight xorg.xauth xorg.x11perf
         xorg.xdriinfo xorg.xinput xorg.xkbprint xorg.xkbutils
