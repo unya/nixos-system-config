@@ -67,5 +67,14 @@
         ACTION=="add", SUBSYSTEM=="net", ATTR{address}=="54:e1:ad:11:86:05", NAME="wired0"
     ''
 
+
+    # Temporary desktop manager
+    services.xserver.desktopManager.e19.enable=true;
+    services.xserver.desktopManager.enlightenment.enable=true;
+    services.xserver.desktopManager.kde5 = {
+	enable = true;
+	enableQt4Support = true;
+    };
+    services.xserver.displayManager.sddm.enable=true;
 }
 
