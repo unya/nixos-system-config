@@ -18,7 +18,26 @@
     boot.loader.efi.canTouchEfiVariables = true;
     boot.loader.systemd-boot.enable=true;
     boot.resumeDevice = "/dev/disk/by-uuid/83941a0d-cd18-491f-a5d6-6bf7f6911241";
+    # LUKS
+    boot.initrd.luks.devices.RPOOL = {
+	allowDiscards = true;
+        device =
+"/dev/disk/by-id/nvme-Samsung_SSD_960_PRO_512GB_S3EWNWAJ401238M-part3";
+	fallbackToPassword = true;
+	preLVM = true;
+    };
+     boot.initrd.luks.devices.swap = {
+	allowDiscards = true;
+        device =
+"/dev/disk/by-id/nvme-Samsung_SSD_960_PRO_512GB_S3EWNWAJ401238M-part2";
+	fallbackToPassword = true;
+    };
 
+    swapDevices = [{
+	device = "/dev/disk/by-uuid/83941a0d-cd18-491f-a5d6-6bf7f6911241";
+	encrypted.blkDev = "/dev/disk/by-id/nvme-Samsung_SSD_960_PRO_512GB_S3EWNWAJ401238M-part2";
+	encrypted.label = "swap";
+    }];
     boot.extraModulePackages = [
         pkgs.linuxPackages_4_17.tp_smapi
         pkgs.linuxPackages.exfat-nofuse
