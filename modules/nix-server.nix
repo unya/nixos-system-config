@@ -1,4 +1,4 @@
-{nix, config, pkgs, ...}:
+{nix, config, lib, pkgs, ...}:
 {
     nix.buildCores = lib.mkDefault 0;
     nix.daemonIONiceLevel = 7;

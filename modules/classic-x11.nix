@@ -32,13 +32,12 @@
             unifont
             ipafont
             roboto
-        ]
-    }
+        ];
+    };
 
     hardware.opengl = {
         enable = true;
-        support32bit = true;
-        driSupport32bit = true;
+        driSupport32Bit = true;
         s3tcSupport = true;
     };
 

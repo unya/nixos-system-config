@@ -1,4 +1,5 @@
 {config, lib, pkgs, ...}:
+with pkgs;
 {
     boot.initrd.luks.yubikeySupport = true;
     environment.systemPackages = [
@@ -9,10 +10,10 @@
         yubikey-manager
         yubikey-personalization
     ];
-    services.pcsd.enable = true;
+    services.pcscd.enable = true;
     services.udev.packages = [
         pkgs.libu2f-host
         pkgs.yubikey-personalization
         pkgs.libykneomgr
-    ]
+    ];
 }

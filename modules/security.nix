@@ -11,7 +11,7 @@
         forwardX11 = true;
         gatewayPorts = true;
     };
-    services.rngd.enable = true;   
+    security.rngd.enable = true;   
     boot.initrd.availableKernelModules = [
         "aes_x86_64"
         "aesni_intel"

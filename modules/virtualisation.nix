@@ -2,7 +2,7 @@
 {
     virtualisation.lxd.enable = true;
     virtualisation.docker.enable = true;
-    virtualisation.docker.autoPrune.enabled = true;
+    virtualisation.docker.autoPrune.enable = true;
     virtualisation.rkt.enable = true;
 
     networking.firewall.checkReversePath = false;

@@ -1,8 +1,9 @@
-{config, lib, pkgs, ...}:
+{config, lib, pkgs,nixos, ...}:
+with pkgs;
 {
     hardware.pulseaudio = {
         enable = true;
-        support32bit = true;
+        support32Bit = true;
         zeroconf.discovery.enable = true;
         zeroconf.publish.enable = true;
         tcp.enable = true;
