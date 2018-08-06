@@ -13,7 +13,9 @@
                 ./modules/virtualisation.nix
                 ./modules/security.nix
                 ./modules/network-common.nix
-                ./modules/fprintd.nix ];
+                ./modules/fprintd.nix 
+		./wireless.nix
+	];
     networking.hostName = "lapis";
     boot.loader.efi.canTouchEfiVariables = true;
     boot.loader.systemd-boot.enable=true;
