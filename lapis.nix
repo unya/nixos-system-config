@@ -14,8 +14,8 @@
                 ./modules/security.nix
                 ./modules/network-common.nix
                 ./modules/fprintd.nix ];
-    networking.hostname = "lapis";
-    
+    networking.hostName = "lapis";
+    boot.loader.efi.canTouchEfiVariables = true;
 
     boot.extraModulePackages = [
         pkgs.linuxPackages.tp_smapi
@@ -31,7 +31,7 @@
     ];
     systemd.enableEmergencyMode = true;
 
-    network.hostId = "007f0101"; # Lapis' hostid
+    networking.hostId = "007f0101"; # Lapis' hostid
 
     boot.initrd.availableKernelModules = [
         "igb"
