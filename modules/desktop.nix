@@ -15,8 +15,4 @@
 
     
 
-    environment.systemPackages = with pkgs; [
-        google-chrome pavucontrol mpv youtube-dl wine
-        compton
-    ];
 }
