@@ -8,7 +8,6 @@
                 ./modules/kernel.nix
                 ./modules/users.nix
                 ./modules/desktop.nix
-                ./modules/bluetooth.nix
                 ./modules/audio.nix
                 ./modules/nix-server.nix
                 ./modules/virtualisation.nix
