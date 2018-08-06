@@ -8,6 +8,7 @@
     ];
     boot.extraModulePackages = [
         pkgs.linuxPackages_4_17.openafs
+        pkgs.linuxPackages_4_17.ply
         pkgs.linuxPackages_4_17.systemtap
         pkgs.linuxPackages_4_17.bcc
     ];
