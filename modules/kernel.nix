@@ -7,11 +7,9 @@
         "pcie_aspm=on"
     ];
     boot.extraModulePackages = [
-        pkgs.linuxPackages.openafs
-        pkgs.linuxPackages.perf
-        pkgs.linuxPackages.ply
-        pkgs.linuxPackages.systemtap
-        pkgs.linuxPackages.bcc
+        pkgs.linuxPackages_4_17.openafs
+        pkgs.linuxPackages_4_17.systemtap
+        pkgs.linuxPackages_4_17.bcc
     ];
     zramSwap.enable = true;
     boot.kernel.sysctl = {

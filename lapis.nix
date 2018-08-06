@@ -18,12 +18,12 @@
     boot.loader.efi.canTouchEfiVariables = true;
 
     boot.extraModulePackages = [
-        pkgs.linuxPackages.tp_smapi
-        pkgs.linuxPackages.vhba
-        pkgs.linuxPackages.x86_perf_policy
-        pkgs.linuxPackages.acpi_call
-        pkgs.linuxPackages.cpupower
+        pkgs.linuxPackages_4_17.tp_smapi
         pkgs.linuxPackages.exfat-nofuse
+        pkgs.linuxPackages_4_17.vhba
+        pkgs.linuxPackages_4_17.x86_energy_perf_policy
+        pkgs.linuxPackages_4_17.acpi_call
+        pkgs.linuxPackages_4_17.cpupower
     ];
 
     boot.kernelParams = [
