@@ -15,6 +15,7 @@
                 ./modules/network-common.nix
                 ./modules/fprintd.nix 
 		./wireless.nix
+		./secret/mindbox.nix
 	];
     networking.hostName = "lapis";
     boot.loader.efi.canTouchEfiVariables = true;
