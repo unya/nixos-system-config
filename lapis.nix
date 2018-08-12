@@ -42,7 +42,6 @@
     }];
     boot.extraModulePackages = [
         pkgs.linuxPackages_4_17.tp_smapi
-        pkgs.linuxPackages.exfat-nofuse
         pkgs.linuxPackages_4_17.vhba
         pkgs.linuxPackages_4_17.x86_energy_perf_policy
         pkgs.linuxPackages_4_17.acpi_call
