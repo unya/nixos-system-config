@@ -64,7 +64,7 @@
     services.udev.extraRules = ''
         ACTION=="add", SUBSYSTEM=="net", ATTR{address}=="00:28:f8:c0:66:c4", NAME="wifi0"
         ACTION=="add", SUBSYSTEM=="net", ATTR{address}=="54:e1:ad:11:86:05", NAME="wired0"
-    ''
+    '';
 
 
     # Temporary desktop manager
