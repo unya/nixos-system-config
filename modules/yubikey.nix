@@ -3,12 +3,15 @@ with pkgs;
 {
     boot.initrd.luks.yubikeySupport = true;
     environment.systemPackages = [
-        yubico-piv-tool
-        libyubikey
-        libykneomgr
-        yubikey-neo-manager
-        yubikey-manager
-        yubikey-personalization
+	libykneomgr
+	libyubikey
+	yubioath-desktop
+	yubico-piv-tool
+	yubikey-manager
+	yubikey-neo-manager
+	yubikey-personalization
+	yubikey-personalization-gui
+	libu2f-host
     ];
     services.pcscd.enable = true;
     services.udev.packages = [
