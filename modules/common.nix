@@ -79,4 +79,7 @@
         "fs.inotify.max_user_watches" = 1048576;
         "net.ipv4.tcp_congestion_control" = "bbr";
     };
+
+    # SystemWide timezone
+    time.timeZone = "UTC";
 }
