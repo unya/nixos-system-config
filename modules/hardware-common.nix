@@ -8,7 +8,6 @@
     hardware.mcelog.enable = true;
     hardware.usbWwan.enable = true;
     security.rngd.enable = true;
-    services.tcsd.enable = true;
     time.hardwareClockInLocalTime = false;
     security.rtkit.enable = true;
     
