@@ -26,4 +26,7 @@
 
 
     services.thermald.enable = true;
+    environment.systemPackages = with pkgs; [
+	cpulimit cpufrequtils x86info
+    ];
 }
