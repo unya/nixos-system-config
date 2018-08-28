@@ -9,6 +9,7 @@
 
     services.thinkfan.enable = true;
     services.tlp.enable = true;
+    environment.systemPackages = with pkgs; [tlp];
     services.tlp.extraConfig = ''
         TLP_ENABLE=1
         CPU_HWP_ON_AC=performance
