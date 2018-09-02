@@ -14,7 +14,7 @@
         pkgs.qemu
         pkgs.qemu-riscv
         pkgs.OVMF-CSM
-	<unstable>.nixpkgs.lxd
+	(import <unstable> {}).lxd
     ];
 
 
