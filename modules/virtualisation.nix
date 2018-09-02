@@ -1,6 +1,6 @@
 {config, pkgs, lib, ...}:
 {
-    imports = [ <unstable>/nixos/modules/virtualisation/lxd.nix ];
+    imports = [ <unstable/nixos/modules/virtualisation/lxd.nix> ];
     disabledModules = ["virtualisation/lxd.nix"];
     virtualisation.lxd.enable = true;
     virtualisation.lxd.zfsSupport = true;
